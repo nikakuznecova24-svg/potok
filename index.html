@@ -357,11 +357,6 @@
       .item-reorder-arrows { display: inline-flex; gap: 4px; margin-left: 4px; }
       .item-reorder-arrows button { width: 24px; height: 24px; border-radius: 6px; border: 1px solid var(--card-border); background: var(--card-bg); color: var(--text-secondary); cursor: pointer; font-size: 11px; }
       .drag-handle { display: none; }
-      @media (min-width: 900px) {
-        .item-reorder-arrows { display: none; }
-        .drag-handle { display: inline-flex; align-items: center; cursor: grab; color: var(--text-muted2); font-size: 13px; padding: 0 4px; flex-shrink: 0; -webkit-user-drag: element; user-select: none; -webkit-user-select: none; }
-        .drag-handle:active { cursor: grabbing; }
-      }
       .client-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 10px 0; border-top: 1px solid var(--card-border); }
       .client-row .input.flat { flex: 1; min-width: 120px; }
       .client-amount { max-width: 100px; flex: 0 0 100px !important; }
