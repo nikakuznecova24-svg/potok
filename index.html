@@ -777,7 +777,7 @@ function P({checked:e,onChange:a,disabled:t}){return React.createElement("label"
         .home-view .intentions-heatmap-row .day-grid.compact { max-width: 100%; }
         .main { padding: 26px 36px 32px; }
       }
-    `)}document.addEventListener("keydown",function(ev){if(ev.key==="Enter"&&document.activeElement&&document.activeElement.tagName==="INPUT"){document.activeElement.blur()}});var{useState:C,useEffect:A,useMemo:Pe,useCallback:W,useRef:ce}=React,Ke=ReactDOM.createRoot(document.getElementById("root"));Ke.render(React.createElement(Ce,null));})();
+    `)}document.addEventListener("keydown",function(ev){if(ev.key!=="Enter")return;var ae=document.activeElement;if(ae&&ae.tagName==="TEXTAREA")return;var mb=document.querySelector(".overlay-card .btn-primary:not(.btn-danger)");if(mb){mb.click();return}if(ae&&ae.tagName==="INPUT"){ae.blur()}});var{useState:C,useEffect:A,useMemo:Pe,useCallback:W,useRef:ce}=React,Ke=ReactDOM.createRoot(document.getElementById("root"));Ke.render(React.createElement(Ce,null));})();
 
 </script>
 </body>
